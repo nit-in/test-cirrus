@@ -11,4 +11,5 @@ task:
   show_script:
     - cat requirements.txt
     - pip install -r requirements.txt
+    - rclone --version
 
