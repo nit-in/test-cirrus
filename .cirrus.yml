@@ -17,4 +17,5 @@ task:
     - echo $BIN
     - echo $HOME
     - ls $HOME
+    - python -c "from pathlib import Path;print(print(Path.home()))"
 
