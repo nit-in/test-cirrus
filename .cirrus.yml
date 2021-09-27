@@ -5,7 +5,7 @@ task:
   source_env_script:
     - pwd
     - ls 
-    - ls $CIRRUS_WORKING_DIR/**/**
+    - ls $CIRRUS_WORKING_DIR/*
     - cat $CIRRUS_WORKING_DIR/.env
     - source $CIRRUS_WORKING_DIR/.env
   show_script:
