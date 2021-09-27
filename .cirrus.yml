@@ -1,0 +1,14 @@
+task:
+  name: cirrus-tests
+  container:
+    image: python:latest
+  source_env:
+    - $(pwd)
+    - ls 
+    - ls $CIRRUS_WORKING_DIR/**/**
+    - cat $CIRRUS_WORKING_DIR/.env
+    - source $CIRRUS_WORKING_DIR/.env
+  show_req:
+    - cat requirements.txt
+    - pip install requirements.txt
+
