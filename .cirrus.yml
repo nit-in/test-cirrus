@@ -2,13 +2,13 @@ task:
   name: cirrus-tests
   container:
     image: python:latest
-  source_env:
+  source_script:
     - $(pwd)
     - ls 
     - ls $CIRRUS_WORKING_DIR/**/**
     - cat $CIRRUS_WORKING_DIR/.env
     - source $CIRRUS_WORKING_DIR/.env
-  show_req:
+  show_script:
     - cat requirements.txt
     - pip install requirements.txt
 
