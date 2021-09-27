@@ -14,4 +14,7 @@ task:
     - cat requirements.txt
     - pip install -r requirements.txt
     - rclone --version
+    - echo $BIN
+    - echo $HOME
+    - ls $HOME
 
